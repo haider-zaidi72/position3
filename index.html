@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Sidebar</title>
+    <style>
+        body{
+            font-size: 1.5em;
+            background-color: #ddd;
+            color: rgb(59, 59, 59);
+        }
+        *{
+            box-sizing:border-box;
+        }
+        .container{
+            border: 5px solid rgb(69, 69, 153);
+            height: 400px;
+            padding: 5px;
+            overflow: auto;
+        }
+        .sidebar{
+            color: antiquewhite;
+            background-color: blueviolet;
+            padding: 1em;
+            width: 150px;
+        }
+        .content{
+            padding: 1em;
+            margin-left: 160px;
+        }
+        .container{
+            position: relative;
+            
+        }
+        .sidebar{
+            position: fixed;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <p>This is side bar content it should remain in the position as the content scroll</p>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officiis qui deserunt! Quae nobis voluptatum nulla tenetur a eum reiciendis consequuntur quos ea, praesentium non quo velit deserunt delectus explicabo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro pariatur a facilis numquam itaque dolores aliquam nulla velit eum, blanditiis in consequuntur autem laudantium adipisci error dignissimos mollitia perspiciatis quibusdam!</p>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui similique, rerum laudantium aspernatur officiis corporis nihil eligendi ex dolor molestias deleniti explicabo sit placeat, corrupti, quos sunt? Facere, totam maxime!</P>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia delectus, quisquam libero maxime esse quaerat dicta soluta aliquam ipsa asperiores nisi nam consequatur, qui obcaecati in recusandae voluptas veniam veritatis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid esse suscipit minus qui incidunt nisi, accusantium ipsam at quos itaque, eos similique rem iste nobis deleniti beatae recusandae amet.</p>
+        </div>
+    </div>
+</body>
+</html>
